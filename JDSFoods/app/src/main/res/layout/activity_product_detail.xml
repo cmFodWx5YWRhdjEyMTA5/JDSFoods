@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_above="@+id/rl_cart"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/viewPager"
+                    android:id="@+id/viewPagerIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/viewPagerCountDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+<View
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/gray">
+</View>
+
+
+
+
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/colorBlack" />
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:id="@+id/tv_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="$23"
+                                android:textColor="@color/colorGreen" />
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:layout_marginTop="7dp"
+                                android:id="@+id/tv_items"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                                android:gravity="right"
+                                android:textSize="12sp"
+                                android:id="@+id/tv_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hello_blank_fragment"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:gravity="right"
+                                android:textSize="16sp"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/tv_tprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="eeeeeff"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_price_down"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/tv_quote_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/colorGreen" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                                android:id="@+id/rl_quantity"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_single"
+                                    android:textSize="10sp"
+                                    android:text="Single Quantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+
+                                <com.jdsfoods.Utilities.QuantityView
+                                    android:layout_below="@+id/tv_single"
+                                    android:id="@+id/qv_item"
+                                    app:qv_quantityDialog="false"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    app:qv_addButtonBackground="@drawable/quantity"
+                                    app:qv_addButtonTextColor="@color/colorWhite"
+                                    app:qv_quantity="0"
+                                    app:qv_removeButtonBackground="@drawable/quantity"
+                                    app:qv_removeButtonTextColor="@color/colorWhite" />
+
+                                <TextView
+                                    android:layout_marginLeft="23dp"
+                                    android:layout_toRightOf="@+id/tv_single"
+                                    android:id="@+id/tv_carton"
+                                    android:textSize="10sp"
+                                    android:text="Carton Quantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <com.jdsfoods.Utilities.QuantityView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_below="@+id/tv_carton"
+                                    android:layout_toRightOf="@+id/qv_item"
+                                    android:id="@+id/qv_carton"
+                                    app:qv_quantityDialog="false"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    app:qv_addButtonBackground="@drawable/quantity"
+                                    app:qv_addButtonTextColor="@color/colorWhite"
+                                    app:qv_quantity="0"
+                                    app:qv_removeButtonBackground="@drawable/quantity"
+                                    app:qv_removeButtonTextColor="@color/colorWhite" />
+
+                                <TextView
+                                    android:visibility="invisible"
+                                    android:textColor="@color/colorWhite"
+                                    android:id="@+id/tv1"
+                                    android:background="@drawable/quantity"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/tv_add"
+                                    android:layout_below="@+id/tv1"
+                                    android:textColor="@color/colorWhite"
+                                    android:padding="5dp"
+                                    android:text="  ADD  "
+                                    android:background="@drawable/quantity"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_cart"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_cart"
+            android:id="@+id/tv_cart"
+            android:text="Items(0)"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

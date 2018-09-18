@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:weightSum="5"
+    android:padding="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_image"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tv_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_single"
+                android:id="@+id/tv_carton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="12sp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorGreen"
+        android:id="@+id/tv_item"
+        android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:gravity="right"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rl_price"
+            android:layout_below="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10sp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eeeeeff"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_promo"
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eeeeeff"
+                android:textColor="@color/dgray" />
+
+
+        </RelativeLayout>
+
+    <TextView
+        android:gravity="right"
+        android:layout_below="@+id/rl_price"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

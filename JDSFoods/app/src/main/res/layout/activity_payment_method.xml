@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".PaymentMethodActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="Select Payment Method"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pay"
+        android:layout_below="@+id/tv_header"
+        android:layout_above="@+id/bt_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/bt_done"
+        android:text="DONE"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

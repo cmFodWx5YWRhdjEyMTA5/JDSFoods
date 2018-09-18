@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@drawable/login_bg"
+    tools:context="com.jdsfoods.LoginActivity">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+</RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_user"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/pass_icon"
+            android:textColorHint="@color/colorBlack"
+            android:hint="User ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textSize="14sp"
+            android:id="@+id/et_pass"
+            android:inputType="textPassword"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/pass_icon"
+            android:textColorHint="@color/colorBlack"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:textColor="@color/colorWhite"
+            android:text="LOGIN"
+            android:background="@drawable/login_bt_round"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_forget1"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Don't have a password?"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_forget2"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Forgot Password?"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

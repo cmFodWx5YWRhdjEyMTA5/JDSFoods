@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light"
+    tools:context="com.jdsfoods.DashBoardFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:hint="Search category and products"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delivery"
+        android:layout_below="@+id/rl_search"
+        android:gravity="center"
+        android:text="Delivery Day: Not Assigned"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_shop"
+        android:layout_below="@+id/tv_delivery"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:text="SHOP BY CATEGORIES"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_shop"
+        android:background="@color/light"
+        android:id="@+id/rv_products"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/rl_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_cart"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_cart"
+            android:id="@+id/tv_cart"
+            android:text="Items(0)"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

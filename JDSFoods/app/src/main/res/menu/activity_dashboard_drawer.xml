@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_brand"
+            android:title="Brands" />
+        <item
+            android:id="@+id/nav_submit"
+            android:title="Submitted Quotation" />
+        <item
+            android:id="@+id/nav_accept"
+            android:title="Accepted Quotation" />
+
+        <item
+            android:id="@+id/nav_order"
+            android:title="Placed Order" />
+
+        <item
+            android:id="@+id/nav_change"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_pending"
+            android:title="Pending Payment" />
+
+        <item
+            android:id="@+id/nav_sale"
+            android:title="Sale History" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+    </group>
+
+    <item android:id="@+id/nav_title" android:title="OTHER LINKS" android:iconTint="@color/colorWhite">
+        <menu>
+            <item
+                android:id="@+id/nav_track"
+                android:icon="@drawable/locate_icon"
+                android:title="Track your order" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/help_icon"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="Help Center" />
+
+            <item
+                android:id="@+id/nav_trust"
+                android:icon="@drawable/trusy_pay"
+                android:title="Trust Pay" />
+
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/tc_icon"
+                android:title="Terms Conditions" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/log_out"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
+

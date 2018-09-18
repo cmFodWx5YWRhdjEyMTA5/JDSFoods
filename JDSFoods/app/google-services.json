@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "347457692243",
+    "firebase_url": "https://jdsfoods-213206.firebaseio.com",
+    "project_id": "jdsfoods-213206",
+    "storage_bucket": "jdsfoods-213206.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347457692243:android:813071a9ef688054",
+        "android_client_info": {
+          "package_name": "com.jdsfoods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347457692243-qp7ub9ts91k350b33og25mi67danu2on.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jdsfoods",
+            "certificate_hash": "99a652accbc196b43843def02bb208d8e4bfb81a"
+          }
+        },
+        {
+          "client_id": "347457692243-tjbkunngtg8urkq6pabnerhug2843plg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrHTvFh-NA94MHHwXSdyoPOcna2PuNZ_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347457692243-tjbkunngtg8urkq6pabnerhug2843plg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

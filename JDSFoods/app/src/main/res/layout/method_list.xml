@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_marginLeft="20dp"
+        android:button="@null"
+        android:background="@drawable/select_radio"
+        android:layout_centerVertical="true"
+        android:id="@+id/rl_option"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rl_option"
+                android:adjustViewBounds="true"
+                android:id="@+id/iv_image"
+                android:layout_width="65dp"
+                android:layout_height="60dp" />
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_image"
+                android:id="@+id/tv_name"
+                android:textColor="@color/colorBlack"
+                android:text="Placed On"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/colorWhite">
+</View>
+
+
+
+</LinearLayout>

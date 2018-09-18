@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@drawable/login_bg"
+    tools:context="com.jdsfoods.ChangePwdActivity">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:drawablePadding="3dp"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/pass_icon"
+            android:hint="Old Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:id="@+id/et_new_pwd"
+            android:inputType="textPassword"
+            android:drawablePadding="3dp"
+            android:drawableLeft="@drawable/pass_icon"
+            android:hint="New Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_request"
+            android:textColor="@color/colorWhite"
+            android:text="REQUEST SEND"
+            android:background="@drawable/login_bt_round"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_forget"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Don't you want to change password?"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

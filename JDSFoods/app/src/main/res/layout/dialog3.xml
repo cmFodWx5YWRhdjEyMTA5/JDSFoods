@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="Please pay the amount to place the order"
+            android:textSize="14sp"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:padding="15dp"
+            android:id="@+id/tv_price"
+            android:gravity="center"
+            android:text="TOTAL: $ 10"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:text="SELECT PAYMENT METHOD"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_online"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:text="ONLINE PAYMENT"
+            android:background="@color/dgray"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+        <Button
+            android:id="@+id/bt_pay_now"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:text="PAY NOW"
+            android:background="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>

@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.jdsfoods.TrackFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="Order Place ON"
+                android:padding="10dp"
+                android:id="@+id/tv_date"
+                android:textSize="16sp"
+                android:textColor="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_sale"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:background="@color/light"
+                android:padding="10dp"
+                android:text="Delivery Status"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_place"
+                            android:gravity="center"
+                            android:background="@drawable/circle_gg"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/order_place_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/v_place"
+                            android:layout_marginTop="44dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/gray"
+                            android:layout_width="6dp"
+                            android:layout_height="60dp">
+
+                        </View>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Order Placed"
+                        android:layout_toRightOf="@+id/f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@+id/t1"
+                        android:id="@+id/t2"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="We have received your order."
+                        android:layout_toRightOf="@+id/f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="-1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_confirm"
+                            android:gravity="center"
+                            android:background="@drawable/circle_gg"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/confirmation_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/v_confirm"
+                            android:layout_marginTop="44dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/gray"
+                            android:layout_width="6dp"
+                            android:layout_height="60dp">
+
+                        </View>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Order Confirmed"
+                        android:layout_toRightOf="@+id/f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@+id/t3"
+                        android:id="@+id/t4"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Your order have been confirmed."
+                        android:layout_toRightOf="@+id/f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="-1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_ship"
+                            android:gravity="center"
+                            android:background="@drawable/circle_gg"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shipped_icon"
+                            android:id="@+id/iv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/v_ship"
+                            android:layout_marginTop="44dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/gray"
+                            android:layout_width="6dp"
+                            android:layout_height="60dp">
+
+                        </View>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Shipped"
+                        android:layout_toRightOf="@+id/f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@+id/t5"
+                        android:id="@+id/t6"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="We are preparing your order."
+                        android:layout_toRightOf="@+id/f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="-1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_deliver"
+                    android:gravity="center"
+                    android:background="@drawable/circle_gg"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp">
+
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/delivered_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Delivered"
+                        android:layout_toRightOf="@+id/rl_deliver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@+id/t7"
+                        android:id="@+id/t8"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:text="Your order is ready to pickup."
+                        android:layout_toRightOf="@+id/rl_deliver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,558 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jdsfoods.ProfileFragment">
+
+    <ScrollView
+        android:layout_above="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@color/navy"
+        android:id="@+id/rl_header"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/upload_img"
+            android:layout_height="100dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:id="@+id/upload_image_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/circle"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/tv_name"
+            android:layout_below="@+id/upload_img"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_email"
+            android:gravity="center"
+            android:layout_below="@+id/tv_name"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Name"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Phone"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Email"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:text="Company"
+                android:textColor="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_company"
+                android:backgroundTint="#DEDEDE"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Address"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Post Code"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_post"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="City"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="State"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_state"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Country"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_country"
+            android:backgroundTint="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="BTW Number"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_btw"
+            android:backgroundTint="#DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:text="Opening Hours"
+            android:textColor="@color/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Monday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d1_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d1_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tuesday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d2_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d2_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Wednesday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d3_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d3_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Thursday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d4_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d4_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Friday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d5_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d5_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Saturday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d6_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d6_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Sunday"
+                    android:textColor="@color/colorGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/d7_start"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+                <EditText
+                    android:id="@+id/d7_end"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+<Button
+    android:id="@+id/bt_save"
+    android:text="SAVE"
+    android:textColor="@color/colorWhite"
+    android:background="@color/colorGreen"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
